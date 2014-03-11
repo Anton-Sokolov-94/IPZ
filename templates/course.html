@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+    {% block title %}{{ course.title }} {% endblock %}
+
+{% block content %}
+    <div>
+        <div class="course_title_div"><span class="course_title_span">{{ course.title }}</span></div>
+        <div class="course_description_div">Description: {{ course.description }}</div>
+        <div>
+            {% for each in lectures %}
+                <div class="lecture_div">
+                    <span><br>{{ each.title }}<br><br></span>
+                    <form action="/courses/course/lecture" method="post">
+                        <input id="lecture" type="hidden" name="lecture" value="{{ each.id }}"/>
+                        <input type="submit" value="Go!" />
+                    </form>
+                </div>
+            {% endfor %}
+        </div>
+        <div>
+        {% if type %}
+        <form action="/editor/" method="get">
+            <input id="course" type="hidden" name="course" value="{{ course.id }}"/>
+            <input type="submit" value="Add lecture" />
+        </form>
+        {% endif %}
+            <div>
+                <form action="" method="post">
+                    <label for="comment"></label>
+                    <input id="comment" type="text" name="comment" value="comment"/>
+                    <input type="submit" value="Add comment" />
+                </form>
+            </div>
+            <div class = "comment_div">
+                {% if comments|length > 1 %}
+                {% for each in comments %}
+                    <div>
+                        <span>{{ each.user_name }}:</span>
+                        <span>{{ each.text }}</span>
+                    </div>
+                {% endfor %}
+                {% elif comments|length == 1 %}
+                    <div>
+                        <span>{{ comments.0.user_name }}:</span>
+                        <span>{{ comments.0.text }}</span>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

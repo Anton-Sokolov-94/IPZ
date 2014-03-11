@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Courses
+{% endblock %}
+
+{% block content %}
+    <div class="div_courses_main">
+        <div class="logo_form">
+            <div class="div_courses_errors">
+            {{ error }}
+            </div>
+        </div>
+
+        <div class="div_courses_courses">
+            <div class="div_corses_form">
+                <form action="" method="post">
+                    <p>
+                        <label for="course">Enter Course Title:</label>
+                        <input id="course" type="text" name='course' maxlength="25" />
+                        <input type="submit" value="Find Course" />
+                    </p>
+                </form>
+            </div>
+            {% for each in courses %}
+                <div class="courses_each_course_div">
+                    <p class="courses_course_title">{{ each.title }}</p>
+                    <div>{{ each.description }}</div>
+                    <form action="/courses/course" method="post'">
+                        </a><input id="course" type="hidden" name="course" value="{{ each.id }}"/>
+                        <input type="submit" value="Go!" />
+                    </form>
+                    <form action="/courses/subscribe" method="post'">
+                        </a><input id="course" type="hidden" name="course" value="{{ each.id }}"/>
+                        <input type="submit" value="Subscribe!" />
+                    </form>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+  {% endblock %}

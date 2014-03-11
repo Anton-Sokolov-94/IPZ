@@ -1,0 +1,229 @@
+body{
+    width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.div_menu{
+    float: left;
+}
+
+.main_div{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.div_logo_text{
+    width: 570px;
+    height: 219px;
+    float: left;
+    font-family: "Comic Sans MS";
+    font-size: 80px;
+    color: orangered;
+    text-align: center;
+}
+
+.courses_each_course_div{
+    background-color: gainsboro;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 10px;
+    width: 800px;
+}
+
+.subscribe_message{
+    font-family: "Comic Sans MS";
+    font-size: 80px;
+}
+
+.footer{
+    width: 800px;
+    border-radius: 10px;
+    background-color: lightgray;
+    float: left;
+    padding: 10px;
+}
+
+.footer_text_div{
+    font-size: 10px;
+    text-align: center;
+    font-family: "Comic Sans MS";
+    width: 800px;
+}
+
+.courses_logo{
+    background-image: url("brainsotrm.jpg");
+    width: 230px;
+    height: 219px;
+}
+
+.logo_form{
+    float: left;
+}
+
+.logo{
+    width: 800px;
+    height: 219px;
+    float: left;
+}
+
+.courses_course_title{
+    font-family: cursive;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.div_content{
+    float: left;
+    margin: 0 auto;
+    width: 800px;
+    min-height: 500px;
+}
+
+.block_content{
+    margin-top: 15px;
+    float: left;
+    width: 800px;
+}
+
+.course_description_div{
+    font-size: 18px;
+    margin-top: 25px;
+    background-color: gainsboro;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.course_title_div{
+    width: 800px;
+    text-align: center;
+}
+
+.course_title_span{
+    text-align: center;
+    font-size: 22px;
+    margin: 0 auto;
+    background-color: gainsboro;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.lecture_main_div{
+    width: 800px;
+    float: left;
+    margin: 0 auto;
+}
+
+.lecture_title_div{
+    width: 800px;
+    text-align: center;
+}
+
+.lecture_title_span{
+    text-align: center;
+    font-size: 22px;
+    margin: 0 auto;
+    background-color: gainsboro;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.lecture_text_div{
+    width: 800px;
+    min-height: 100px;
+    border-radius: 5px;
+    background-color: gainsboro;
+    padding: 5px;
+    margin-top: 25px;
+}
+
+.comment_div{
+    width: 800px;
+    float: left;
+    margin-top: 20px;
+}
+
+.lecture_div{
+    background-color: gainsboro;
+    border-radius: 5px 5px 5px 5px;
+    width: 800px;
+    margin-top: 15px;
+}
+
+.div_courses_main{
+    float: left;
+    margin: 0 auto;
+}
+.div_courses_form{
+    float: left;
+}
+.div_courses_errors{
+    float: left;
+}
+.div_courses_courses{
+    float: left;
+    width: 550px;
+    margin-left: 20px;
+}
+
+.image_in_content{
+    background-image: url("brainsotrm.jpg");
+    width: 230px;
+    height: 219px;
+    float: left;
+}
+
+li{
+    float: left;
+    width: 133px;
+    height: 50px;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: lightgray;
+    vertical-align: middle;
+}
+
+li div{
+    float: left;
+    height: 14px;
+    width: 133px;
+}
+
+.li_left{
+    border-radius: 10px 0 0 10px;
+}
+
+.li_right{
+    border-radius: 0 10px 10px 0;
+}
+
+.a_menu{
+    text-decoration: none;
+    vertical-align: middle;
+    color: darkblue;
+    padding-bottom: 16px;
+    padding-top: 15px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+.a_menu:hover{
+    color: #ffffff;
+}
+
+li:hover{
+    background-color: grey;
+    color: #ffffff;
+}
+
+ul{
+    float: left;
+    width: 800px;
+    height: 50px;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.a{
+    float: left;
+}

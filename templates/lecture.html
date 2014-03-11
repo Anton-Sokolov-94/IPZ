@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <span class="lecture_error_span">{{ error }}</span>
+    <div class="lecture_main_div">
+        <div class="lecture_title_div"><span class="lecture_title_span">{{ lecture.title }}</span></div>
+        <div class="lecture_text_div">
+            {% block lecture %}
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}
